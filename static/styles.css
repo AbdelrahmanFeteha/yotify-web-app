@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #b3b3b3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.containerr {
+    width: 80%; /* Ensuring both containers are the same width */
+    max-width: 800px; /* Set a maximum width */
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: auto; /* Center the container */
+}
+
+.wide-container {
+    max-width: 800px; /* Adjust this value as needed */
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.main-header {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+h1 {
+    color: #1DB954;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.main-header h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #f0f0f0;
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #b3b3b3;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: #1aa34a;
+}
+
+.messages .alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.alert.error {
+    background-color: #f44336;
+    color: white;
+}
+
+.card {
+    background: #2e2e2e;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.track-status li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.track-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.track-title, .track-status {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #b3b3b3;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.link-box {
+    background: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex: 1;
+    text-align: center;
+}
+
+.link-box .btn {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+    font-size: 18px;
+    background-color: #1DB954;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.link-box .btn:hover {
+    background-color: #1aa34a;
+}

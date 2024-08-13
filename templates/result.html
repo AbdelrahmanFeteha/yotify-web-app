@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversion Result</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="containerr">
+        <h1 class="text-center">Conversion Results</h1>
+        
+        <!-- Header for the playlist information -->
+        <h3 class="text-center">The Target Playlist Information</h3>
+        <div class="card">
+            <div class="card-body">
+                <p><strong>Spotify Playlist Name:</strong> {{ sp_playlist_name }}</p>
+                <p><strong>Description:</strong> {{ sp_playlist_desc }}</p>
+                <p><strong>Number of tracks:</strong> {{ sp_playlist_num_tracks }}</p>
+                <p><strong>Owner:</strong> {{ sp_playlist_owner }}</p>
+                <p><strong>Total duration:</strong> {{ sp_playlist_mins }} minutes</p>
+            </div>
+        </div>
+        
+        <!-- Header for the track status -->
+        <h3 class="text-center">Track Addition Status</h3>
+        <div class="card">
+            <div class="card-body">
+                <ul class="track-status">
+                    {% for track in track_status %}
+                        <li>
+                            <div class="track-info">
+                                <span class="track-title"><strong>Track Title:</strong> {{ track.title }}</span>
+                                <span class="track-status"><strong>Track Status:</strong> {{ track.status }}</span>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Header for the playlist link -->
+        <h3 class="text-center">Your Playlist is Ready!</h3>
+        <div class="text-center mt-4 link-container">
+            <div class="link-box">
+                <a class="btn" href="{{playlist_link}}" target="_blank">Listen to Your Converted Playlist</a>
+            </div>
+            <div class="link-box">
+                <a class="btn" href="{{ url_for('index') }}">Convert Another Playlist</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

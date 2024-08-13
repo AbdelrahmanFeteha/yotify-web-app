@@ -1,0 +1,28 @@
+# Python bytecode
+*.pyc
+__pycache__/
+
+# Virtual environment
+venv/
+
+# Environment variable files
+.env
+
+# JSON files with sensitive information
+browser.json
+.cache
+
+# VS Code workspace settings
+.vscode/
+
+# Logs and database files
+*.log
+*.sqlite3
+*.db
+
+# Miscellaneous
+*.DS_Store
+*.directory
+
+#extras
+details.txt
